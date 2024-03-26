@@ -1,0 +1,38 @@
+:root{
+ --pink-gray: #edd1f0;
+ --pale-gray: #675078;
+ --mid-gray: #6b5d75;
+ --jean-gray: #645a85;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+#header {
+    background-color: var(--pink-gray);
+    padding: 1.1rem 0;
+}
+#header .header-wrapper .logo{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+#header .header-wrapper .logo a {
+    color: black;
+    letter-spacing: 5px;
+}
+#header .header-wrapper .user-actions {
+    font-size: 1rem ;
+    line-height: 1.5 ;
+    gap: 1rem ;
+}
+#header .header-wrapper .user-actions .logout-btn{
+    cursor: pointer;
+}
+#header .header-wrapper .user-actions a{
+    color: black;
+}
+#header .header-wrapper .user-actions a:hover{
+    text-decoration-line: underline;
+}
