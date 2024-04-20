@@ -36,3 +36,48 @@ html{
 #header .header-wrapper .user-actions a:hover{
     text-decoration-line: underline;
 }
+
+.clear-filter {
+    margin-top: 1rem;
+}
+
+.price-filter .price-filter-select > div {
+    margin-bottom: 0.5rem;
+}
+
+.loader-backdrop {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.loader2 > div {
+    border: 5px solid var(--jean-blue); 
+    width: 5rem;
+    height: 5rem;
+    border-top: 5px solid #f0eeeb;
+    border-bottom: 5px solid #f0eeeb;
+    border-radius: 50%;
+    animation: spinner2 2s linear infinite;
+}
+
+@keyframes spinner2 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

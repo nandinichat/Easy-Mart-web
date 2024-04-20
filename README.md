@@ -1,1 +1,1 @@
-# Complete UI for Ecommerce app
+# Complete UI for Ecommerce app using fakestore API 

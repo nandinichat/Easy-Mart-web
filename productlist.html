@@ -11,7 +11,15 @@
 </head>
 <body>
 
-    <div class="productList">
+    <div class="loader-backdrop" id="loader-backdrop">
+        <div class="loader2">
+            <div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="productListPage">
      
         <nav id="header">
             <div class="container">
@@ -46,47 +54,43 @@
 
                     <div class="sidebar-title fw-bold"> Categories</div>
                     <div id="categoryList">
-                        <a href="#" class="d-flex text-decoration-none">Electronic gadgets</a>
-                        <a href="#" class="d-flex text-decoration-none">Kitchen supplies</a>
-                        <a href="#" class="d-flex text-decoration-none">Women Fashion</a>
-                        <a href="#" class="d-flex text-decoration-none">Toys & Books</a>
-                        <a href="#" class="d-flex text-decoration-none">Gift Ideas</a>
-
+                       <!-- will be populated by JS -->
                     </div>
 
                     <div class="sidebar-title">Filter by price</div>
                     <div class="price filter">
                         <div class="price-filer-select d-flex flex-row justify-content-between">
                             <div class="form-group">
-                                <select name="minprice" class="form-select" id="minprice">
+                              <select name="minPrice" class="form-select" id="minPrice">
                                     <option value="0">0</option>
+                                    <option value="20">20</option>
+                                    <option value="100">100</option>
                                     <option value="500">500</option>
                                     <option value="1000">1000</option>
-                                    <option value="5000">5000</option>
-                                    <option value="10000">10000</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select name="maxprice" class="form-select" id="maxprice">
+                              <select name="maxPrice" class="form-select" id="maxPrice">
                                     <option value="0">0</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
                                     <option value="500">500</option>
                                     <option value="1000">1000</option>
-                                    <option value="5000">5000</option>
-                                    <option value="10000">10000</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="price-filter-title d-flex flex-row justify-content-start">
-                            <div id="price-filter-label-max">Max Price</div>
-                            <div id="price-filter-label-min">Min Price</div>
+                          <div id="price-filter-label-min">Min Price</div>
+                          <div id="price-filter-label-max">Max Price</div>
                         </div>
                     </div>
 
-                    <button class="btn btn-danger clear-filter">Refreash filters</button>
+                    <button class="btn btn-warning clear-filter" id="search">Search</button>
+                    <button class="btn btn-danger clear-filter" id="clear">Clear Filters</button>
 
                 </div>
-                <div class="product-list-box" id="productlist">
+                <div class="product-list-box" id="productList">
                     <!--list of products-->
                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
                            <div class="product-img text-center">
@@ -95,76 +99,7 @@
                            <div class="product-name text-center">Abc product</div>
                            <div class="product-price text-center">&#8377;1000</div>
                         </a>
-                        <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">bcd product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">cde product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>
-                         <a href="productDetails.html" target="_blank" class="product-item text-decoration-none d-inline-block">
-                            <div class="product-img text-center">
-                              <img src="img/productimg .jpg"  alt="">
-                            </div>
-                            <div class="product-name text-center">Abc product</div>
-                            <div class="product-price text-center">&#8377;1000</div>
-                         </a>  
+                       
 
                 </div>
             </div>
@@ -175,8 +110,9 @@
 
     </div>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</body>
+    <script src="js/productList.js"></script>
+  </body>
 </html>
